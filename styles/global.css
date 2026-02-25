@@ -4,3 +4,17 @@
     color: #ffffff;
   }
 }
+
+/* Tablet text size */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Small phone text size */
+@media (max-width: 480px) {
+  body {
+    font-size: 20px;
+  }
+}
