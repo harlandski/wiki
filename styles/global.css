@@ -1,7 +1,20 @@
+a {
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
         body {
                 background-color: #1a1a1a;
                 color: #ffffff;
+        }
+        a {
+          color:#acc8d7;
+        }
+        a:active {
+          color:#446879;
+        }
+        a:hover {
+          color:#c8dfea;
         }
 }
 
