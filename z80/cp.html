@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>cp r</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>cp r</h1>
+  <ul>
+    <li><code>cp r</code> - set flags as if A - r</li>
+  </ul>
+  <h2>intepreting results</h2>
+  <h3>unsigned integers</h3>
+  <ul>
+    <li>If A == N, then Z flag is set.</li>
+    <li>If A != N, then Z flag is reset.</li>
+    <li>If A < N, then C flag is set. <  /li>
+    <li>If A>= N, then C flag is reset.<  /li>
+  </ul>
+  <h3>signed integers</h3>
+  <ul>
+    <li>If A == N, then Z flag is set.</li>
+    <li>If A != N, then Z flag is reset.</li>
+    <li>If A < N, then S and P/V are different.</li>
+    <li>If A >= N, then S and P/V are the same.</li>
+  </ul>
+  <p>source: <cite><a href="http://z80-heaven.wikidot.com/instructions-set:cp">z80 heaven</a></cite></p>
+  <footer>
+    <a href="../index.html">wiki</a> &gt <a href="z80.html">z80</a> &gt <a href="cp.html">cp</a>
+  </footer>
+</body>
+
+</html>
