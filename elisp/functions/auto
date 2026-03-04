@@ -15,7 +15,7 @@ do echo '<!DOCTYPE html>
     <ul>
     </ul>
     <footer>
-      <a href="../../index.html">wiki</a> &gt <a href="../index.html">emacs</a> &gt <a href="index.html">functions</a> &gt <a href="'$filename.html'">'$filename'</a>
+      <a href="../../index.html">wiki</a> &gt <a href="../index.html">elisp</a> &gt <a href="index.html">functions</a> &gt <a href="'$filename.html'">'$filename'</a>
     </footer>
   </body>
   </html>' > $filename.html
