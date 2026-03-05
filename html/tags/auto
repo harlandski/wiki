@@ -20,4 +20,5 @@ do echo '<!DOCTYPE html>
     </footer>
   </body>
   </html>' > $filename.html
+  sed -i "s|</ul>|<li><a href=\"$filename.html\">\&lt$filename\&gt</a></li>\n</ul>|" index.html
 done
