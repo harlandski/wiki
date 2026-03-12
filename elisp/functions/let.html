@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="../../styles/global.css">
   </head>
   <body>
-    <nav>
-      <a href="../../index.html">wiki</a> &gt <a href="../index.html">elisp</a> &gt <a href="index.html">functions</a> &gt <a href="let.html">let</a>
-    </nav>
+  <nav>
+    <a href="../../index.html">wiki</a> &gt
+    <a href="../index.html">elisp</a> &gt
+    <a href="index.html">functions</a> &gt
+    <a href="let.html">let</a>
+  </nav>
     <h1>let</h1>
     <ul>
+      <li>assigns variables in local scope</li>
+      <li>first takes list of variable value pairs, which should each be lists</li>
+      <li>then takes function list of what to do with variables</li>
+      <li>e.g. <code><pr>
+(let ((me "James")(wife "Indira")(daughter1 "Amara")(daughter2 "Isabelle")) (message "My name is %s, my wife is %s and my daughters are %s and %s." me wife daughter1 daughter2))
+      </pr></code></li>
+      <li>if you simply include variable names they will be set to nil</li>
+      <li>the tutorial recommends using<code>
+	;;; -*- lexical-binding: t -*-</code></li>
     </ul>
-
   </body>
   </html>

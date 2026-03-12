@@ -1,13 +1,10 @@
-#!/bin/bash
-
-for filename in "$@"
-do echo '<!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>'$filename'</title>
+    <title>zap-up-to-char</title>
     <link rel="stylesheet" href="../../styles/global.css">
   </head>
   <body>
@@ -15,12 +12,11 @@ do echo '<!DOCTYPE html>
     <a href="../../index.html">wiki</a> &gt
     <a href="../index.html">elisp</a> &gt
     <a href="index.html">functions</a> &gt
-    <a href="'$filename.html'">'$filename'</a>
+    <a href="zap-up-to-char.html">zap-up-to-char</a>
   </nav>
-    <h1>'$filename'</h1>
+    <h1>zap-up-to-char</h1>
     <ul>
+      <li>zaps up to but not including given character</li>
     </ul>
   </body>
-  </html>' > $filename.html
-  sed -i "s|</ul>|<li><a href=\"$filename.html\">$filename</a></li>\n</ul>|" index.html
-done
+  </html>
